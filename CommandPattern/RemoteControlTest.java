@@ -10,5 +10,6 @@ public class RemoteControlTest {
         // rc.setCommand(lightOn);
         rc.onButtonWasPressed(0);
         rc.offButtonWasPressed(0);
+        rc.undoButtonWasPressed();
     }
 }
