@@ -1,5 +1,5 @@
 public abstract class CaffeineBevarage {
-    public void prepare() {
+    final public void prepare() {
         boilWater();
         pourInCup();
         brew();
