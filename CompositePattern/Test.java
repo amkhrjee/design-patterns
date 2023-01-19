@@ -18,6 +18,7 @@ public class Test {
         dinerHoueMenu.add(dessertMenu);
 
         Waitress alice = new Waitress(allMenus);
-        alice.printMenu();
+        // alice.printMenu();
+        alice.printVegetarianMenu();
     }
 }

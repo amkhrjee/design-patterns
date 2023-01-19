@@ -21,14 +21,16 @@ public class CompositeIterator implements Iterator<MenuComponent> {
         }
     }
 
-    // the fuck?
     public boolean hasNext() {
         if (stack.empty()) {
             return false;
         } else {
             Iterator<MenuComponent> iterator = (Iterator<MenuComponent>) stack.peek();
             if (!iterator.hasNext()) {
-
+                stack.pop();
+                return hasNext();
+            } else {
+                return true;
             }
         }
     }
